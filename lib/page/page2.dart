@@ -48,6 +48,7 @@ class _Page2BodyState extends State<Page2Body> {
                 //   itemInDP = e;
 
                 // });
+
                 itemInDP_result = e;
               },
               value: _value,
@@ -61,8 +62,10 @@ class _Page2BodyState extends State<Page2Body> {
         ),
         IconButton(
             onPressed: () {
+              //print(_value + "111");
               setState(() {
                 itemInDP_result;
+                _value = itemInDP_result;
                 print(itemInDP_result + 'rr');
               });
             },
