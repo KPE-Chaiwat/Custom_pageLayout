@@ -45,6 +45,7 @@ class _EasyDropDown_TongCustomState extends State<EasyDropDown_TongCustom> {
         onChanged: (String? newValue) {
           setState(() {
             widget.onChangeinside(newValue!);
+            widget.value = newValue;
           });
         },
         // items:
