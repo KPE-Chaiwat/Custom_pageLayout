@@ -280,7 +280,7 @@ class Right_Items extends StatelessWidget {
             right_msg: dataInTable["Data072"],
             font_Size: 14,
           ),
-          CustomButton()
+          const CustomButton()
         ],
       ),
     );
