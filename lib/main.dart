@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:tpk_login_v2/TongCoding/cubit/datatest_cubit.dart';
 
 //--------------------------------------
 
@@ -26,6 +27,10 @@ class MyApp extends StatelessWidget {
         create: (BuildContext context) =>
             BlocPageRebuild(), //For rebuild only page inside without app bar/left menu
       ),
+      //*tongcubit
+      BlocProvider<DatatestCubit>(
+        create: (context) => DatatestCubit(),
+      )
     ], child: const MainContext());
   }
 }

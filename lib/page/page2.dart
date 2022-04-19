@@ -31,6 +31,7 @@ class _Page2BodyState extends State<Page2Body> {
   };
   String _value = _tongTestDataDP.entries.first.value;
   String itemInDP_result = '';
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -62,11 +63,10 @@ class _Page2BodyState extends State<Page2Body> {
         ),
         IconButton(
             onPressed: () {
-              //print(_value + "111");
               setState(() {
                 itemInDP_result;
                 _value = itemInDP_result;
-                print(itemInDP_result + 'rr');
+                // print(itemInDP_result + 'rr');
               });
             },
             icon: Icon(Icons.contactless_sharp)),
